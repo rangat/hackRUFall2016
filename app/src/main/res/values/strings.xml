@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Good Vibrations</string>
+    <string name="app_name">Popular Vote</string>
+    <string name="API_KEY">4e700942b55a4240ae8a8ad398e8f309</string>
 </resources>
