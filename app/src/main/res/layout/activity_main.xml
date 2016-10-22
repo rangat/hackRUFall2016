@@ -10,16 +10,5 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.culinera.culinera.MainActivity">
 
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/swiperefresh"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dip">
 
-        <ListView
-            android:id="@+id/bluetoothList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </android.support.v4.widget.SwipeRefreshLayout>
 </RelativeLayout>
