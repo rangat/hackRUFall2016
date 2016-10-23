@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1061392946057",
+    "firebase_url": "https://hackrufall2016.firebaseio.com",
+    "project_id": "hackrufall2016",
+    "storage_bucket": "hackrufall2016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061392946057:android:a1708730df4e9a85",
+        "android_client_info": {
+          "package_name": "com.culinera.culinera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061392946057-0fo4qt1s3t713rktjlgjirmp92sah1rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.culinera.culinera",
+            "certificate_hash": "9A24C62E93DF445021924AA1C576F3E2C7312D76"
+          }
+        },
+        {
+          "client_id": "1061392946057-urdd059os0c9nicdnt63ah2v6g1n1gpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEVFRz29mdgBQdVBwtDS0tXa7PtvkAnUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061392946057-urdd059os0c9nicdnt63ah2v6g1n1gpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
