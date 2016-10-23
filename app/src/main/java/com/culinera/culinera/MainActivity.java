@@ -22,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Dexter.initialize(getApplicationContext());
+        PermissionListener l = DialogOnDeniedPermissionListener.Builder
+                .withContext(getApplicationContext())
+                .withTitle("Internet")
+                .withMessage("Necessary for core functions of the app")
+                .withButtonText("OK")
+                .withIcon(R.mipmap.ic_launcher)
+                .build();
+        Dexter.checkPermission(l, Manifest.permission.INTERNET);
         setContentView(R.layout.activity_main);
         CardView vote = (CardView)findViewById(R.id.signedPic_card);
         CardView view = (CardView)findViewById(R.id.viewData_card);

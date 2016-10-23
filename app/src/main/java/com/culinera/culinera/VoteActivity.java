@@ -20,10 +20,14 @@ import java.util.ArrayList;
 
 public class VoteActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vote);
+        LoadJSonTask task = new LoadJSonTask();
+        task.execute();
 
     }
 
@@ -51,7 +55,16 @@ public class VoteActivity extends AppCompatActivity {
     private class LoadJSonTask extends AsyncTask<String, Void, String>{
         @Override
         protected String doInBackground(String... params){
-
+            try{
+                JSONObject object = readJsonFromUrl("https://congress.api.sunlightfoundation.com/upcoming_bills?apikey=4e700942b55a4240ae8a8ad398e8f309");
+                JSONArray array = object.getJSONArray("results");
+                String[] resultingArray = array.join(",").split(",");
+                String stuff = resultingArray[6];
+                Log.i("Test", stuff);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            return "";
         }
 
         @Override
