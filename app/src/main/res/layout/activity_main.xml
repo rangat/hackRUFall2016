@@ -10,5 +10,82 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.culinera.culinera.MainActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:background="@android:drawable/list_selector_background"
+            android:id="@+id/signedPic_card"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/signedPic"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/signed_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:id="@+id/signedPicText"
+                    android:layout_below="@+id/signedPic"
+                    android:text= "Vote on the Upcoming Bills"
+                    android:textSize="18sp"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:background="@android:drawable/list_selector_background"
+            android:layout_below="@+id/signedPic_card"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:id="@+id/viewData_card">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/viewData"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/view_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:background="@color/colorPrimary"
+                    android:text="View Voting Data"
+                    android:id="@+id/viewData_text"
+                    android:textSize="18sp"
+                    android:padding="2dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/viewData"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>
