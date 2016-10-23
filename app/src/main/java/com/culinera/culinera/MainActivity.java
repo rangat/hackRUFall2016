@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         CardView vote = (CardView)findViewById(R.id.signedPic_card);
         CardView view = (CardView)findViewById(R.id.viewData_card);
         Intent intent = new Intent(this, VoteActivity.class);
+        Intent i2 = new Intent(this, ViewDataActivity.class);
         vote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,14 +45,9 @@ public class MainActivity extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(i2);
                 Snackbar.make(view, "View voting data", Snackbar.LENGTH_SHORT).show();
             }
         });
-
-
-
     }
-
-
-
 }
