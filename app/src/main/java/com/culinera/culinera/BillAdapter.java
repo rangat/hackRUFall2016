@@ -29,22 +29,29 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
     @Override
     public void onBindViewHolder(BillViewHolder b, int i){
         BillInfo bill = list.get(i);
+        final int f = i;
         b.dOb.setText("Date of Bill: " + bill.getDate());
         b.cham.setText("Chambers: " + bill.getChamber());
         b.sentence.setText(bill.getContext());
         b.yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                remove(f);
 
             }
         });
         b.no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                remove(f);
             }
         });
 
+    }
+
+    public void remove(int position){
+        list.remove(position);
+        notifyDataSetChanged();
     }
 
     @Override
